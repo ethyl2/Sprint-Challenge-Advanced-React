@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import trophy from '../images/trophy.svg';
 import Axios from 'axios';
-import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Label } from 'recharts';
 
 class Players extends Component {
     constructor() {
@@ -29,7 +29,17 @@ class Players extends Component {
                         <div className='graphContainer'>
                             <LineChart width={800} height={400} data={this.state.players}>
                                 <Line type="monotone" dataKey="searches" stroke="#8884d8" />
-                                <CartesianGrid stroke="#ccc" />
+                                <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+                                <XAxis dataKey="id">
+                                    <Label offset={10}>
+                                        Id Number
+                                    </Label>
+                                </XAxis>
+                                <YAxis dataKey="searches">
+                                <Label position='left' angle={270} style={{ textAnchor: 'middle' }}>
+                                    Searches
+                                </Label>
+                                </YAxis>
                             </LineChart>
                         </div>
                     </div>)
