@@ -17,6 +17,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>Women's World Cup</h1>
         <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
       </header>
       <Players />
