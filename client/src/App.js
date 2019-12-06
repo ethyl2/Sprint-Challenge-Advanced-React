@@ -22,6 +22,8 @@ function App() {
       </header>
       <Players />
       <footer>
+        <hr />
+        
       <a
           className="App-link"
           href="https://reactjs.org"
