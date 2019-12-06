@@ -57,3 +57,10 @@ button {
 .dark-mode .trophy {
   background: white;
 }
+
+.graphContainer {
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
